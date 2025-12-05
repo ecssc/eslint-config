@@ -1,6 +1,6 @@
 import { defineConfig } from 'eslint/config'
 
-import { ecsscConfigDefault } from './src/index.mjs'
+import { ecsscConfigDefault } from '@ecssc/eslint-config'
 
 export default defineConfig(
   ecsscConfigDefault,
