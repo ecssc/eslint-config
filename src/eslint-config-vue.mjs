@@ -1,15 +1,19 @@
 import tsParser from '@typescript-eslint/parser'
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import { defineConfig } from 'eslint/config'
-import pluginPrettier from 'eslint-plugin-prettier'
+import pluginPrettier from 'eslint-plugin-prettier/recommended'
 import pluginTailwindcss from 'eslint-plugin-tailwindcss'
 import pluginVue from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
 
 export default defineConfig(
-  pluginVue.configs['flat/recommended'],
+  pluginPrettier,
   pluginTailwindcss.configs['flat/recommended'],
-  ...defineConfigWithVueTs(pluginVue.configs['flat/essential'], vueTsConfigs.recommended),
+  pluginTailwindcss.configs['flat/recommended'],
+  ...defineConfigWithVueTs(
+    pluginVue.configs['flat/recommended'],
+    vueTsConfigs.recommended
+  ),
   {
     name: 'app/language-options',
     files: ['**/*.vue'],
@@ -20,13 +24,6 @@ export default defineConfig(
         extraFileExtensions: ['.vue'],
         sourceType: 'module',
       },
-    },
-  },
-  {
-    name: 'app/plugins',
-    plugins: {
-      prettier: pluginPrettier,
-      tailwindcss: pluginTailwindcss,
     },
   },
   {
