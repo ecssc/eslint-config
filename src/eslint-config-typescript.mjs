@@ -1,21 +1,21 @@
-import {defineConfig} from "eslint/config";
-import pluginTypescript from "typescript-eslint";
-import pluginImport from "eslint-plugin-import-x";
+import { defineConfig } from 'eslint/config'
+import { flatConfigs } from 'eslint-plugin-import-x'
+import pluginTypescript from 'typescript-eslint'
 
 export default defineConfig(
-    pluginImport.flatConfigs.typescript,
-    pluginTypescript.configs.recommendedTypeChecked,
-    {
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-            },
-        },
+  flatConfigs.typescript,
+  pluginTypescript.configs.recommendedTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
     },
-    {
-        name: 'app/rules',
-        rules: {
-            '@typescript-eslint/consistent-type-imports': 'error',
-        },
-    }
+  },
+  {
+    name: 'app/rules',
+    rules: {
+      '@typescript-eslint/consistent-type-imports': 'error',
+    },
+  }
 )
