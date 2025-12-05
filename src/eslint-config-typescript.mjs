@@ -17,5 +17,18 @@ export default defineConfig(
     rules: {
       '@typescript-eslint/consistent-type-imports': 'error',
     },
+  },
+  {
+    settings: {
+      'import-x/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: './tsconfig.json',
+        },
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
+        },
+      },
+    },
   }
 )
