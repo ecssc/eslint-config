@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](//compare/0.0.4...0.0.5) (2025-12-05)
+
+
+### chore
+
+* add eslint prettier config 61d2f9f5de7d02d408be977ac8654e2746591530
+
 ## [0.0.4](//compare/0.0.3...0.0.4) (2025-12-05)
 
 
