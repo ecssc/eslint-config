@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1-alpha.3](//compare/0.0.1-alpha.2...0.0.1-alpha.3) (2025-12-05)
+
+
+### chore
+
+* configure plugin imports correctly 743f199865cf03007a0e83da2cd1ab76025e87d8
+
 ## [0.0.1-alpha.2](//compare/0.0.1-alpha.1...0.0.1-alpha.2) (2025-12-05)
 
 ### chore
