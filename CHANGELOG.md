@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1-alpha.4](//compare/0.0.1-alpha.3...0.0.1-alpha.4) (2025-12-05)
+
+
+### chore
+
+* configure commitlint 85aa2b323f1196ca1bed2f5e096414736ed97526
+
 ## [0.0.1-alpha.3](//compare/0.0.1-alpha.2...0.0.1-alpha.3) (2025-12-05)
 
 
