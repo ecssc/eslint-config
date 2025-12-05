@@ -3,7 +3,7 @@
   "version": "0.0.1-alpha.1",
   "description": "Shared ESLint config for ECSSC projects",
   "type": "module",
-  "exports": "./src/index.js",
+  "exports": "./src/index.mjs",
   "files": [
     "src"
   ],
