@@ -4,9 +4,6 @@
   "description": "Shared ESLint config for ECSSC projects",
   "type": "module",
   "exports": "./src/index.js",
-  "files": [
-    "src"
-  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ecssc/eslint-config.git"
