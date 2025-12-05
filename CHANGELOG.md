@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](//compare/0.0.2...0.0.3) (2025-12-05)
+
+
+### chore
+
+* update vue rules 57ed6e397acd1570d273754c778aabaed84f4ec8
+
 ## [0.0.2](//compare/0.0.1...0.0.2) (2025-12-05)
 
 
