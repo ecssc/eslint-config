@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1-alpha.2](//compare/0.0.1-alpha.1...0.0.1-alpha.2) (2025-12-05)
+
+
+### chore
+
+* configure export correctly 364786d38775cb2dd0cf0c8ce49ed1d93527bb15
+
 ## [0.0.1-alpha.1](//compare/0.0.1-alpha.0...0.0.1-alpha.1) (2025-12-05)
 
 
