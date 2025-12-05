@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1-alpha.5](//compare/0.0.1-alpha.4...0.0.1-alpha.5) (2025-12-05)
+
+
+### chore
+
+* configure dependencies e029418e7538742b3c6b08082c09f3f68ae9b238
+
 ## [0.0.1-alpha.4](//compare/0.0.1-alpha.3...0.0.1-alpha.4) (2025-12-05)
 
 
