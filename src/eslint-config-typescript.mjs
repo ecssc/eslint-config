@@ -2,6 +2,9 @@ import { defineConfig } from 'eslint/config'
 import { flatConfigs } from 'eslint-plugin-import-x'
 import pluginTypescript from 'typescript-eslint'
 
+/**
+ * @type {import('eslint').Linter.Config[]}
+ */
 export default defineConfig(
   flatConfigs.typescript,
   pluginTypescript.configs.recommendedTypeChecked,

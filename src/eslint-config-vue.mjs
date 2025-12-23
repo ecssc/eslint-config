@@ -6,6 +6,9 @@ import pluginTailwindcss from 'eslint-plugin-tailwindcss'
 import pluginVue from 'eslint-plugin-vue'
 import vueParser from 'vue-eslint-parser'
 
+/**
+ * @type {import('eslint').Linter.Config[]}
+ */
 export default defineConfig(
   pluginPrettier,
   pluginTailwindcss.configs['flat/recommended'],
