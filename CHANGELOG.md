@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](//compare/0.0.5...0.0.6) (2025-12-23)
+
+
+### feat
+
+* configure react native rules 784c839515277baaa6c3ad30301c00f07b55defe
+
 ## [0.0.5](//compare/0.0.4...0.0.5) (2025-12-05)
 
 
