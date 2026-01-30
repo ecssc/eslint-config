@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.0](https://github.com/ecssc/eslint-config/compare/0.0.6...1.0.0) (2026-01-30)
+
+### ⚠ BREAKING CHANGES
+
+* react native now uses eslint-plugin-react-native
+
+### Features
+
+* allow direct import of individual rulesets ([3b766d5](https://github.com/ecssc/eslint-config/commit/3b766d5abbd6bff723e0bd7d9e811aa97bdcb07c))
+
 ## [0.0.6](//compare/0.0.5...0.0.6) (2025-12-23)
 
 
