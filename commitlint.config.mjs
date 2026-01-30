@@ -1,3 +1,3 @@
 export default {
-  extends: ['@ecssc/commitment-config'],
+  extends: ['@ecssc/commitlint-config'],
 }
