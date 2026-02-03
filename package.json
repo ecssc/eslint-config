@@ -2,6 +2,8 @@
   "name": "@ecssc/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint config for ECSSC projects",
+  "license": "MIT",
+  "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
   "type": "module",
   "overrides": {
     "conventional-changelog-conventionalcommits": "^8.0.0"
