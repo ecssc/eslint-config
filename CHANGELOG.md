@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1](https://github.com/ecssc/eslint-config/compare/1.0.0...1.0.1) (2026-02-03)
+
+### Bug Fixes
+
+* disable conflicting vue multi-line rule ([4c7042a](https://github.com/ecssc/eslint-config/commit/4c7042ae5bb75f885fa2b758c4cc3d0e1ef0d63c))
+
 ## [1.0.0](https://github.com/ecssc/eslint-config/compare/0.0.6...1.0.0) (2026-01-30)
 
 ### ⚠ BREAKING CHANGES
