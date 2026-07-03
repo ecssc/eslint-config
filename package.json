@@ -73,7 +73,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^20.0.0",
-    "@ecssc/commitlint-config": "^0.0.3",
+    "@ecssc/commitlint-config": "^0.0.4",
     "@ecssc/eslint-config": "^1.0.0",
     "@ecssc/prettier-config": "^0.1.0",
     "@ecssc/release-it-config": "^1.0.2",
