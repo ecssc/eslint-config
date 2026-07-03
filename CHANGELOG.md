@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2](https://github.com/ecssc/eslint-config/compare/1.0.1...1.0.2) (2026-07-03)
+
+### Bug Fixes
+
+* patch vulnerable dependencies ([#1](https://github.com/ecssc/eslint-config/issues/1)) ([a016b17](https://github.com/ecssc/eslint-config/commit/a016b17f19046cf32c5fa2384086f703972540e5))
+
 ## [1.0.1](https://github.com/ecssc/eslint-config/compare/1.0.0...1.0.1) (2026-02-03)
 
 ### Bug Fixes

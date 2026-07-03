@@ -1,6 +1,6 @@
 {
   "name": "@ecssc/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared ESLint config for ECSSC projects",
   "license": "MIT",
   "author": "Edward Coleridge Smith <edcoleridgesmith@gmail.com>",
