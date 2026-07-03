@@ -1,0 +1,43 @@
+name: Test
+
+on:
+  push:
+    # Branch pushes only. Naming the `branches` filter means tag pushes (i.e. the
+    # `vX.Y.Z` tag a release creates) no longer trigger this workflow.
+    branches:
+      - '**'
+
+permissions:
+  contents: read
+  packages: read
+
+# Cancel superseded runs when several commits are pushed to the same branch in
+# quick succession — only the latest commit needs to be tested.
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    # Skip the automated version-bump commit a release pushes to main (the tag
+    # push is already excluded by the `branches` filter above). Ordinary branch
+    # pushes and merges into main still run.
+    if: "${{ !startsWith(github.event.head_commit.message, 'release: v') }}"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          registry-url: https://npm.pkg.github.com
+
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Lint
+        run: npx eslint .
+
+      - name: Build
+        run: npm run build
