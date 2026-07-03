@@ -6,6 +6,7 @@ on:
 permissions:
   contents: write
   packages: read
+  id-token: write
 
 jobs:
   release:
@@ -37,7 +38,19 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.RELEASE_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Release
+        # release-it bumps the version, writes the changelog, tags, creates the
+        # GitHub Release and publishes to GitHub Packages.
         run: npm run release -- --ci
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Publish to npm
+        # Trusted publishing (OIDC): no token needed — npm exchanges the job's
+        # id-token for a short-lived credential and generates provenance
+        # automatically. Requires npm >= 11.5.1, so refresh npm first. The
+        # `@ecssc:registry` override beats the GitHub Packages scope pin in
+        # .npmrc (that pin is only used for installs).
+        run: |
+          npm install -g npm@latest
+          npm publish --access public --@ecssc:registry=https://registry.npmjs.org
