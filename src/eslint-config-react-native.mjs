@@ -1,6 +1,6 @@
+import { defineConfig } from 'eslint/config'
 import pluginReactNative from 'eslint-plugin-react-native'
 import globals from 'globals'
-import { defineConfig } from 'eslint/config'
 
 /**
  * ESLint flat config for React Native projects.
