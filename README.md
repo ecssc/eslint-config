@@ -31,14 +31,16 @@ export default [
 
 ### Combining Configs
 
+Layer `typescript` on top of `default` for a TypeScript project:
+
 ```javascript
 import defaultConfig from '@ecssc/eslint-config/default'
 import typescriptConfig from '@ecssc/eslint-config/typescript'
-import vueConfig from '@ecssc/eslint-config/vue'
 
 export default [
   ...defaultConfig,
   ...typescriptConfig,
-  ...vueConfig,
 ]
 ```
+
+The `vue` and `react-native` configs are self-contained presets — `vue` already bundles TypeScript, Tailwind, and Prettier, so use them on their own rather than stacking them with `typescript`.
